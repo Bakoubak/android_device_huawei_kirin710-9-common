@@ -5,7 +5,7 @@
 #
 
 ## Common Path
-COMMON_PATH := device/huawei/hi6250-9-common
+COMMON_PATH := device/huawei/kirin710-9-common
 
 # error: overriding commands for target 
 # Fix charger animation conflit
@@ -73,8 +73,8 @@ TARGET_KERNEL_CLANG_VERSION := r416183b1
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 
 # Kernel Source
-TARGET_KERNEL_CONFIG := merge_hi6250_defconfig
-TARGET_KERNEL_SOURCE := kernel/huawei/hi6250-9
+TARGET_KERNEL_CONFIG := merge_kirin710_defconfig
+TARGET_KERNEL_SOURCE := kernel/huawei/merge_kirin710_defconfig-9
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -83,7 +83,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Platform
-TARGET_BOARD_PLATFORM := hi6250
+TARGET_BOARD_PLATFORM := kirin710
 
 # Props
 TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop

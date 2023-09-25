@@ -1,8 +1,5 @@
 #
-# Vendor Blobs for hi6250-common - ANE-LGRP2-OVS 9.1.0.401
-# [ro.build.fingerprint]: [HUAWEI/ANE-LX1/HWANE:9/HUAWEIANE-L01/9.1.0.355C109:user/release-keys]
-# [ro.huawei.build.fingerprint]: [HUAWEI/ANE-LX1/HWANE:9/HUAWEIANE-L01/9.1.0.410C109:user/release-keys]
-# 
+# Vendor Blobs for kirin710-common
 #
 
 # Audio Hardware
