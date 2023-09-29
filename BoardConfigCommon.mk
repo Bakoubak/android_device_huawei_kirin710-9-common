@@ -24,7 +24,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := hi6250
+TARGET_BOOTLOADER_BOARD_NAME := kirin710
 
 # Charger
 BACKLIGHT_PATH := /sys/class/leds/lcd_backlight0/brightness
@@ -74,7 +74,7 @@ TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(
 
 # Kernel Source
 TARGET_KERNEL_CONFIG := merge_kirin710_defconfig
-TARGET_KERNEL_SOURCE := kernel/huawei/merge_kirin710_defconfig-9
+TARGET_KERNEL_SOURCE := kernel/huawei/kirin710-9
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -90,7 +90,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
 
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.hi6250
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.kirin710
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
@@ -119,7 +119,7 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
 # Vendor
-VENDOR_SECURITY_PATCH := 2022-01-01 # ANE-LGRP2-OVS 9.1.0.401
+VENDOR_SECURITY_PATCH := 2018-06-19 # POT-LX1 - 9.1.0
 
 # Wifi
 BOARD_HOSTAPD_DRIVER := NL80211

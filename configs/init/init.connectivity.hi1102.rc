@@ -21,7 +21,7 @@ on early-init
     setprop wifi.interface wlan0
 #AGPS
     setprop is_hisi_connectivity_chip 1
-    setprop ro.hardware.consumerir "hisi.hi6250"
+    setprop ro.hardware.consumerir "hisi.kirin710"
 
 on init
     chown bluetooth bluetooth /dev/hwbt
