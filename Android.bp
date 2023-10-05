@@ -36,6 +36,23 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+cc_prebuilt_binary {
+    name: "libc_secshared",
+    compile_multilib: "32",
+    multilib: {
+    lib32: {
+        srcs: ["proprietary/vendor/lib/libc_secshared.so"],
+        },
+    },
+        strip: {
+        none:true,
+    },
+    allow_undefined_symbols: true,
+    check_elf_files: false,
+    soc_specific: true,
+    vendor: true,
+    enabled: true,
+}
 
 android_app_import {
 	name: "gnss_supl20service_hisi",

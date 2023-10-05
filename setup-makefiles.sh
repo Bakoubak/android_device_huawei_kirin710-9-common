@@ -25,7 +25,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "agassi2 anne bach2 bond figo florida leland"
+write_headers "potter"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true

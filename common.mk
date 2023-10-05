@@ -8,7 +8,7 @@
 COMMON_PATH := device/huawei/kirin710-9-common
 
 ## Inherit common vendor blobs
-$(call inherit-product, vendor/huawei/kirin710-9-common/hi6250-9-common-vendor.mk)
+$(call inherit-product, vendor/huawei/kirin710-9-common/kirin710-9-common-vendor.mk)
 
 ## Inherit hardware repo (huawei version)
 $(call inherit-product, hardware/huawei/hardware.mk)
