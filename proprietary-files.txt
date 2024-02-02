@@ -464,7 +464,6 @@ vendor/etc/init/vendor.huawei.hardware.sensors@1.0-service.rc
 -vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
 
 # TEE
--bin/tee_auth_daemon
 vendor/etc/native_packages.xml
 -vendor/lib/libc_secshared.so;MODULE=libc_secshared_system
 -vendor/lib/vendor.huawei.hardware.libteec@2.0.so;MODULE=vendor.huawei.hardware.libteec@2.0.so_system
