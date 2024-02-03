@@ -7,7 +7,7 @@
 LOCAL_PATH := $(call my-dir)
 
 # Global Flags
-HW_MKBOOTIMG := $(COMMON_PATH)/tools/mkbootimg
+HW_MKBOOTIMG := $(TARGET_KERNEL_SOURCE)/tools/mkbootimg
 
 # kernel.img
 INTERNAL_CUSTOM_BOOTIMAGE_ARGS := --base $(BOARD_KERNEL_BASE) --pagesize $(BOARD_KERNEL_PAGESIZE) --kernel $(INSTALLED_KERNEL_TARGET) --ramdisk $(BUILT_RAMDISK_TARGET) --cmdline "$(BOARD_KERNEL_CMDLINE) buildvariant=userdebug"
